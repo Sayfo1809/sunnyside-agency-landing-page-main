@@ -1,0 +1,55 @@
+html {
+  font-size: 62.5%; //Sets 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $font-body;
+  font-weight: $font-medium;
+  line-height: 1.6;
+
+  background-color: $color-neutral-dark_gra_blue;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary,
+.link--cta,
+.heading-4 {
+  font-family: $font-secondary;
+}
+
+.heading-secondary,
+.heading-tertiary,
+.link--cta,
+.heading-4,
+.main__text {
+  font-weight: $font-bold;
+  color: $color-neutral-very_dark_des_blue;
+}
+
+.heading-primary {
+  font-size: $font-heading-primary;
+  font-weight: $font-black;
+  text-transform: uppercase;
+  color: $color-neutral-white;
+  letter-spacing: 0.7rem;
+}
+
+.heading-secondary {
+  font-size: $font-heading-secondary;
+}
+
+.heading-tertiary {
+  &--mod {
+    color: $color-neutral-grayish_blue;
+  }
+}
+
+.main__text {
+  font-family: $font-primary;
+
+  &--photography {
+    color: $color-primary-dark_blue;
+  }
+}

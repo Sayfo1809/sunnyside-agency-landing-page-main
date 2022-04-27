@@ -1,0 +1,103 @@
+.main {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+
+  &__details,
+  &__image,
+  &__creative {
+    flex-basis: 50%;
+  }
+
+  &__details {
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-inline: 7rem;
+    background-color: $color-neutral-white;
+  }
+
+  &__text {
+    color: $color-neutral-dark_gra_blue;
+    margin-block: 2rem;
+  }
+
+  &__image {
+    order: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background: url("../images/desktop/image-transform.jpg");
+    @include respond(phone) {
+      background: url("../images/mobile/image-transform.jpg");
+    }
+  }
+
+  .heading-secondary {
+    align-self: end;
+  }
+
+  .link {
+    position: relative;
+    display: block;
+    width: fit-content;
+    align-self: start;
+    text-transform: uppercase;
+    z-index: 100100;
+
+    &::before,
+    &--red::before {
+      content: "";
+      position: absolute;
+      display: block;
+      bottom: 0.2rem;
+      left: -5%;
+      height: 5px;
+      width: 110%;
+      border-radius: 1.6rem;
+      z-index: -10000;
+    }
+
+    &::before {
+      background-color: lighten($color-primary-yellow, 35%);
+    }
+    &--red::before {
+      background-color: lighten($color-primary-soft_red, 15%);
+    }
+  }
+
+  &-flipped {
+    .main__details {
+      order: 2;
+    }
+
+    .main__image {
+      order: 1;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background: url("../images/desktop/image-stand-out.jpg");
+
+      @include respond(phone) {
+        background: url("../images/mobile/image-stand-out.jpg");
+      }
+    }
+  }
+
+  &__creative {
+    &:nth-child(1) {
+      background: url("../images/desktop/image-graphic-design.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &:nth-child(2) {
+      background: url("../images/desktop/image-photography.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}

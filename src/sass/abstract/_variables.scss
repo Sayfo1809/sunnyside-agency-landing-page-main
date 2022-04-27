@@ -1,0 +1,35 @@
+// COLORS - PRIMARY
+$color-primary-soft_red: hsl(7, 99%, 70%);
+$color-primary-yellow: hsl(51, 100%, 49%);
+$color-primary-dark_des_cyan: hsl(167, 40%, 24%); // Graphic design text
+$color-primary-dark_mod_cyan: hsl(168, 34%, 41%); // Footer
+$color-primary-dark_blue: hsl(198, 62%, 26%); // Photography text
+
+// COLORS - NEUTRAL
+$color-neutral-very_dark_des_blue: hsl(212, 27%, 19%);
+$color-neutral-grayish_blue: hsl(210, 4%, 67%);
+$color-neutral-dark_gra_blue: hsl(232, 10%, 55%);
+$color-neutral-very_dark_gra_blue: hsl(213, 9%, 39%);
+$color-neutral-white: hsl(0, 0%, 100%);
+
+// FONT FAMILIES
+$font-primary: "Barlow", sans-serif;
+$font-secondary: "Fraunces", serif;
+
+// FONT SIZES
+$font-body: 1.125em; //18px
+$font-heading-primary: 4em; //64px
+$font-heading-secondary: 3em; //32px
+$font-heading-tertiary: 1.5em; // 24px
+
+// FONT WEIGHTS
+$font-medium: 600;
+$font-bold: 700;
+$font-black: 900;
+
+// BREAKPOINTS
+$galaxy-fold: 22em; // 352px
+$phone: 37.5em; // 600px
+$tab-port: 56.25em; // 900px
+$tab-land: 75em; // 1200px
+$big-screens: 76em;
