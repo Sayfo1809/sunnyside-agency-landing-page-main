@@ -2,7 +2,7 @@
 .app {
   display: grid;
   grid-template-columns: 1fr 90em 1fr;
-  grid-template-rows: 90vh 100vh 90vh repeat(2, 30vh);
+  grid-template-rows: 90vh max-content 60vh repeat(2, 30vh);
   grid-template-areas:
     ". hero ."
     ". services ."

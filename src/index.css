@@ -72,7 +72,8 @@ body {
 .heading-secondary,
 .heading-tertiary,
 .link--cta,
-.heading-4 {
+.heading-4,
+.testimonial__user-name {
   font-family: var(--font-secondary);
 }
 
@@ -80,7 +81,8 @@ body {
 .heading-tertiary,
 .link--cta,
 .heading-4,
-.main__text {
+.main__text,
+.testimonial__user-name {
   font-weight: var(--font-bold);
   color: var(--color-neutral-very_dark_des_blue);
 }
@@ -111,4 +113,8 @@ body {
 
 .main__text--photography {
   color: var(--color-primary-dark_blue);
+}
+
+.testimonial__user-name {
+  font-size: 1.4rem;
 }

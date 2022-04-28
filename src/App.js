@@ -7,6 +7,7 @@ import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import Gallery from "./components/gallery-section/Gallery";
 import Main from "./components/main-section/Main";
+import Testimonials from "./components/testimonials-section/Testimonials";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Main />
+      <Testimonials />
       <Gallery />
       <Footer />
     </div>
