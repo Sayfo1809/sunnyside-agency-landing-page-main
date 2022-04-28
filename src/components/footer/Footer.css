@@ -1,0 +1,17 @@
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--color-primary-dark_mod_cyan);
+  filter: brightness(170%);
+}
+
+.footer__logo {
+  width: 12.5rem;
+  height: 2.5rem;
+  fill: var(--color-primary-dark_des_cyan);
+  filter: brightness(70%);
+}

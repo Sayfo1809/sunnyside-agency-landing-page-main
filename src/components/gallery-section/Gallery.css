@@ -1,0 +1,10 @@
+.gallery {
+  grid-area: gallery;
+  display: flex;
+}
+
+.gallery__image {
+  flex-basis: 25%;
+  object-fit: cover;
+  object-position: center;
+}

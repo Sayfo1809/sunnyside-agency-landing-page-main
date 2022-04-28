@@ -1,0 +1,12 @@
+.col-1-of-2,
+.col-1-of-3 {
+  height: fit-content;
+}
+
+.col-1-of-2 {
+  flex-basis: 50%;
+}
+
+.col-1-of-3 {
+  flex-basis: 33%;
+}

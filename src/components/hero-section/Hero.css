@@ -1,0 +1,23 @@
+.hero {
+  grid-area: hero;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: url("../../images/desktop/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.hero .heading-primary {
+  margin-block: 15rem;
+}
+
+.hero__arrow {
+  width: 5rem;
+  height: 13rem;
+  stroke: var(--color-neutral-white);
+  fill: none;
+}

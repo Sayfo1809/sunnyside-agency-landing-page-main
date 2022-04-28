@@ -1,0 +1,30 @@
+.graphic-design,
+.photography {
+  flex-basis: 100%;
+  height: 60vh;
+}
+
+.photography {
+  background: url(../../../images/desktop/image-photography.jpg);
+}
+
+.graphic-design {
+  background: url(../../../images/desktop/image-graphic-design.jpg);
+}
+
+.photography,
+.graphic-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.graphic-design .main__text,
+.photography .main__text {
+  width: 50%;
+  text-align: center;
+}

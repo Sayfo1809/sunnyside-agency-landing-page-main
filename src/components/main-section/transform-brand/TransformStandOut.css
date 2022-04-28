@@ -1,0 +1,65 @@
+.transform__image,
+.transform__type,
+.stand-out__image,
+.stand-out__type {
+  height: 50vh;
+  width: 100%;
+}
+
+.transform__type,
+.stand-out__type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 7rem;
+  background-color: white;
+}
+
+.transform__image {
+  background: url("../../../images/desktop/image-transform.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.stand-out__image {
+  background: url("../../../images/desktop/image-stand-out.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main__text {
+  margin-block: 2rem;
+}
+
+.link {
+  position: relative;
+  display: block;
+  width: fit-content;
+  align-self: start;
+  text-transform: uppercase;
+  z-index: 100100;
+  cursor: pointer;
+}
+
+.link::before,
+.link--red::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0.2rem;
+  left: -5%;
+  height: 5px;
+  width: 110%;
+  border-radius: 1.6rem;
+  z-index: -10000;
+}
+
+.link::before {
+  background-color: hsl(51, 100%, 90%);
+}
+
+.link--red::before {
+  background-color: hsl(7, 99%, 90%);
+}

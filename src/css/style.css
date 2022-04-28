@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.125em;
+  font-weight: 600;
+  line-height: 1.6;
+  background-color: #818498;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary,
+.link--cta,
+.heading-4 {
+  font-family: "Fraunces", serif;
+}
+
+.heading-secondary,
+.heading-tertiary,
+.link--cta,
+.heading-4,
+.main__text {
+  font-weight: 700;
+  color: #23303e;
+}
+
+.heading-primary {
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 0.7rem;
+}
+
+.heading-secondary {
+  font-size: 3em;
+}
+
+.heading-tertiary--mod {
+  color: #a7abae;
+}
+
+.main__text {
+  font-family: "Barlow", sans-serif;
+}
+
+.main__text--photography {
+  color: #19536b;
+}
+
+.header {
+  width: 100%;
+  position: relative;
+}
+
+.header-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 3rem;
+}
+
+.header-nav__logo {
+  width: 12rem;
+  height: 5rem;
+  fill: white;
+}
+
+.header-nav__items {
+  display: flex;
+}
+
+.header-nav__item:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.header-nav__link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  padding: 1rem 1.6rem;
+  border-radius: 100px;
+}
+
+.header-nav__link:active,
+.header-nav__link:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #23303e;
+}
+
+.header-nav__link--btn {
+  font-family: "Fraunces", serif;
+  color: #23303e;
+  text-transform: uppercase;
+  background-color: white;
+}
+
+.hero {
+  background: url("../images/desktop/image-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.hero .heading-primary {
+  margin-block: 15rem;
+}
+
+.hero svg {
+  width: 3rem;
+  height: 13rem;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+}
+
+.main__details,
+.main__image,
+.main__creative {
+  flex-basis: 50%;
+}
+
+.main__details {
+  order: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-inline: 7rem;
+  background-color: white;
+}
+
+.main__text {
+  color: #818498;
+  margin-block: 2rem;
+}
+
+.main__image {
+  order: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url("../images/desktop/image-transform.jpg");
+}
+
+@media screen and (max-width: 37.5em) {
+  .main__image {
+    background: url("../images/mobile/image-transform.jpg");
+  }
+}
+
+.main .heading-secondary {
+  align-self: end;
+}
+
+.main .link {
+  position: relative;
+  display: block;
+  width: fit-content;
+  align-self: start;
+  text-transform: uppercase;
+  z-index: 100100;
+}
+
+.main .link::before,
+.main .link--red::before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 0.2rem;
+  left: -5%;
+  height: 5px;
+  width: 110%;
+  border-radius: 1.6rem;
+  z-index: -10000;
+}
+
+.main .link::before {
+  background-color: #fff3ad;
+}
+
+.main .link--red::before {
+  background-color: #ffbcb3;
+}
+
+.main-flipped .main__details {
+  order: 2;
+}
+
+.main-flipped .main__image {
+  order: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url("../images/desktop/image-stand-out.jpg");
+}
+
+@media screen and (max-width: 37.5em) {
+  .main-flipped .main__image {
+    background: url("../images/mobile/image-stand-out.jpg");
+  }
+}
+
+.main__creative:nth-child(1) {
+  background: url("../images/desktop/image-graphic-design.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main__creative:nth-child(2) {
+  background: url("../images/desktop/image-photography.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -1,0 +1,11 @@
+.footer__icon {
+  margin-top: 2rem;
+  fill: var(--color-primary-dark_des_cyan);
+  filter: brightness(80%);
+  width: 2rem;
+  height: 2rem;
+}
+
+.footer__icon:not(:last-child) {
+  margin-right: 2.5rem;
+}

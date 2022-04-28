@@ -1,13 +1,114 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+:root {
+  /* COLORS - PRIMARY */
+  --color-primary-soft_red: hsl(7, 99%, 70%);
+  --color-primary-yellow: hsl(51, 100%, 49%);
+  --color-primary-dark_des_cyan: hsl(167, 40%, 24%); /* Graphic design text */
+  --color-primary-dark_mod_cyan: hsl(168, 34%, 41%); /* Footer */
+  --color-primary-dark_blue: hsl(198, 62%, 26%); /* Photography text */
+
+  /* COLORS - NEUTRAL */
+  --color-neutral-very_dark_des_blue: hsl(212, 27%, 19%);
+  --color-neutral-grayish_blue: hsl(210, 4%, 67%);
+  --color-neutral-dark_gra_blue: hsl(232, 10%, 55%);
+  --color-neutral-very_dark_gra_blue: hsl(213, 9%, 39%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+
+  /* FONT FAMILIES */
+  --font-primary: "Barlow", sans-serif;
+  --font-secondary: "Fraunces", serif;
+
+  /* FONT SIZES */
+  --font-body: 1.125em; /* 18px */
+  --font-heading-primary: 4em; /* 64px*/
+  --font-heading-secondary: 3em; /* 32px*/
+  --font-heading-tertiary: 1.5em; /*  24px*/
+
+  /* FONT WEIGHTS */
+  --font-medium: 600;
+  --font-bold: 700;
+  --font-black: 900;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: 1.125em;
+  font-weight: var(--font-medium);
+  line-height: 1.6;
+  background-color: var(--color-neutral-dark_gra_blue);
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary,
+.link--cta,
+.heading-4 {
+  font-family: var(--font-secondary);
+}
+
+.heading-secondary,
+.heading-tertiary,
+.link--cta,
+.heading-4,
+.main__text {
+  font-weight: var(--font-bold);
+  color: var(--color-neutral-very_dark_des_blue);
+}
+
+.heading-primary {
+  font-size: var(--font-heading-primary);
+  font-weight: var(--font-black);
+  text-transform: uppercase;
+  color: var(--color-neutral-white);
+  letter-spacing: 0.7rem;
+}
+
+.heading-secondary {
+  font-size: var(--font-heading-secondary);
+}
+
+.heading-tertiary {
+  font-size: var(--font-heading-tertiary);
+}
+
+.heading-tertiary--mod {
+  color: var(--color-neutral-grayish_blue);
+}
+
+.main__text {
+  font-family: var(--font-primary);
+}
+
+.main__text--photography {
+  color: var(--color-primary-dark_blue);
 }
