@@ -26,6 +26,7 @@
 .testimonial__testimony {
   width: 70%;
   text-align: center;
+  color: var(--color-neutral-very_dark_gra_blue);
 }
 
 .testimonial__user-name {
