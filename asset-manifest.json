@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/sunnyside-agency-landing-page-main/static/css/main.c95be9f3.css",
+    "main.js": "/sunnyside-agency-landing-page-main/static/js/main.f3024364.js",
+    "static/media/image-header.jpg": "/sunnyside-agency-landing-page-main/static/media/image-header.49b52ffa54752cb7c2d0.jpg",
+    "static/media/image-gallery-milkbottles.jpg": "/sunnyside-agency-landing-page-main/static/media/image-gallery-milkbottles.df1d9d8460e873924250.jpg",
+    "static/media/image-gallery-sugarcubes.jpg": "/sunnyside-agency-landing-page-main/static/media/image-gallery-sugarcubes.09b72f4fbfbf08579f9d.jpg",
+    "static/media/image-gallery-orange.jpg": "/sunnyside-agency-landing-page-main/static/media/image-gallery-orange.49f4212bc650862672a7.jpg",
+    "static/media/image-gallery-cone.jpg": "/sunnyside-agency-landing-page-main/static/media/image-gallery-cone.461ff4214c3ac822dfff.jpg",
+    "static/media/image-graphic-design.jpg": "/sunnyside-agency-landing-page-main/static/media/image-graphic-design.7ac8bdf0d3df29591a3b.jpg",
+    "static/media/image-photography.jpg": "/sunnyside-agency-landing-page-main/static/media/image-photography.104cf40b52f66520afb0.jpg",
+    "index.html": "/sunnyside-agency-landing-page-main/index.html",
+    "main.c95be9f3.css.map": "/sunnyside-agency-landing-page-main/static/css/main.c95be9f3.css.map",
+    "main.f3024364.js.map": "/sunnyside-agency-landing-page-main/static/js/main.f3024364.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c95be9f3.css",
+    "static/js/main.f3024364.js"
+  ]
+}
