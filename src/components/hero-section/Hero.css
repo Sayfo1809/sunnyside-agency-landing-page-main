@@ -21,3 +21,10 @@
   stroke: var(--color-neutral-white);
   fill: none;
 }
+
+@media screen and (max-width: 37.5em) {
+  .hero .heading-primary {
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+  }
+}

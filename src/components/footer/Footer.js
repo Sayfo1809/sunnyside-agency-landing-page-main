@@ -4,6 +4,8 @@ import Images from "../UIElements/svgs/Images";
 import FooterNav from "./FooterNav";
 import FooterSocials from "./FooterSocials";
 
+import FooterLogo from "../../images/logo.svg";
+
 import "./Footer.css";
 
 const Footer = () => {
@@ -13,6 +15,10 @@ const Footer = () => {
 
       <FooterNav />
       <FooterSocials />
+
+      <svg>
+        <use href={FooterLogo} />
+      </svg>
     </footer>
   );
 };

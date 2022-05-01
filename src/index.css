@@ -21,10 +21,10 @@
   --font-secondary: "Fraunces", serif;
 
   /* FONT SIZES */
-  --font-body: 1.125em; /* 18px */
-  --font-heading-primary: 4em; /* 64px*/
-  --font-heading-secondary: 3em; /* 32px*/
-  --font-heading-tertiary: 1.5em; /*  24px*/
+  --font-body: 1.8rem; /* 18px */
+  --font-heading-primary: 6.4rem; /* 64px*/
+  --font-heading-secondary: 3.2rem; /* 32px*/
+  --font-heading-tertiary: 2.4rem; /*  24px*/
 
   /* FONT WEIGHTS */
   --font-medium: 600;
@@ -81,10 +81,14 @@ body {
 .heading-tertiary,
 .link--cta,
 .heading-4,
-.main__text,
 .testimonial__user-name {
   font-weight: var(--font-bold);
   color: var(--color-neutral-very_dark_des_blue);
+}
+
+.main__text {
+  color: var(--color-neutral-dark_gra_blue);
+  font-family: var(--font-primary);
 }
 
 .heading-primary {
@@ -107,14 +111,23 @@ body {
   color: var(--color-neutral-grayish_blue);
 }
 
-.main__text {
-  font-family: var(--font-primary);
-}
-
 .main__text--photography {
   color: var(--color-primary-dark_blue);
 }
 
 .testimonial__user-name {
   font-size: 1.4rem;
+}
+
+@media screen and (max-width: 37.5em) {
+  .heading-primary {
+    transform: scale(0.65);
+    text-align: center;
+  }
+  .testimonial__user-name {
+    font-size: var(--font-body);
+  }
+  .link {
+    font-size: 1.4rem;
+  }
 }

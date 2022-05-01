@@ -41,3 +41,27 @@
   flex-direction: column;
   align-items: center;
 }
+
+@media screen and (max-width: 37.5em) {
+  .testimonials {
+    padding-block: 8rem;
+  }
+
+  .testimonials .heading-tertiary {
+    font-size: 1.6rem;
+    letter-spacing: 0.3rem;
+  }
+
+  .testimonial__testimony {
+    width: 90%;
+    margin-block: 1.6rem;
+  }
+  .testimonial__user-position {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+
+  .testimonials .col-1-of-3:not(:last-child) {
+    margin-bottom: 5rem;
+  }
+}
