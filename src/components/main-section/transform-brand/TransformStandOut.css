@@ -32,11 +32,7 @@
 .transform .main__text,
 .stand-out .main__text {
   margin-block: 2rem;
-  width: 90vw;
-}
-
-.stand-out .col-1-of-2 {
-  outline: 1px solid red;
+  /* width: 90vw; */
 }
 
 .link {
